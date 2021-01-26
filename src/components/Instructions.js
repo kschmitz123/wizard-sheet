@@ -13,6 +13,10 @@ const Instructions = () => {
         <li>
           Beim Klick auf "3" wird der Bonus zur Gesamtpunktzahl gerechnet.
         </li>
+        <li>
+          <u>Achtung:</u> "X" werden momentan nur hochgezählt. Beim Löschen
+          eines "X" kann es also zu einem Fehler bei der Berechnung kommen.
+        </li>
       </ul>
     </Container>
   );
