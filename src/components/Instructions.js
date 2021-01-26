@@ -6,8 +6,13 @@ const Instructions = () => {
       <ul>
         <li>Nur Zahlen oder X eintragen.</li>
         <li>Narren lassen sich durch Anklicken abhaken.</li>
-        <li>Beim Erreichen von neun X färbt sich das Feld oben links grün.</li>
+        <li>
+          Beim Erreichen von neun "X" färbt sich das Feld oben links grün.
+        </li>
         <li>Beim Klick auf "Fertig" wird die Gesamtpunktzahl berechnet.</li>
+        <li>
+          Beim Klick auf "3" wird der Bonus zur Gesamtpunktzahl gerechnet.
+        </li>
       </ul>
     </Container>
   );
