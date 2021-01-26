@@ -1,3 +1,27 @@
+# Digitaler Begleiter zum Würfelspiel Wizard
+
+Digitaler Punkteerfasser. Es können Punkte und "X" eingetragen werden, die Gesamtpunktzahl wird automatisch berechnet. Sobald ein Spieler 9 "X" erreicht hat, wird dies farblich hervorgehoben. Der 3-Punkte-Bonus kann mit einem Klick hinzugefügt werden.
+
+**Achtung:** "X" werden momentan nur hochgezählt. Beim Löschen
+          eines "X" kann es also zu einem Fehler bei der Berechnung kommen.
+
+
+Die Rechte am Spiel liegen beim Hersteller, dieses Projekt dient nur der privaten Nutzung (und dem Sparen von Papier).
+
+
+# Digital game sheet for Wizrad (game of dice)
+
+Digital scoreboard. You can enter either numbers oder "X", the total score is calculated automatically. As soon as a player hits nine "X", the value will be highlighted in color. You can add the 3-points-bonus with one click.
+
+**Heads up:** "X" are only being counted up. When deleting "X" there might be an error in counting the current amount of "X".
+
+The rights of this game lie with the manufacturer. This project is for private use only (and to save paper).
+
+---
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -39,32 +63,3 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
