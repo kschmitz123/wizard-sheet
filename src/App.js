@@ -1,10 +1,12 @@
 import styled from "styled-components/macro";
-import Table from "./components/Table";
+import GameSheet from "./components/GameSheet";
+import Instructions from "./components/Instructions";
 
 function App() {
   return (
     <Container>
-      <Table />
+      <GameSheet />
+      <Instructions />
     </Container>
   );
 }
@@ -12,8 +14,9 @@ function App() {
 export default App;
 
 const Container = styled.div`
-  margin: 70px 10px 10px;
+  margin: 50px 5px 10px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 `;
