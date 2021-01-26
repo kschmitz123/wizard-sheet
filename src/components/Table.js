@@ -38,6 +38,7 @@ const Table = () => {
   const [total3, setTotal3] = useState("");
   const [total4, setTotal4] = useState("");
   const [total5, setTotal5] = useState("");
+  const [finalCount, setFinalCount] = useState("");
 
   const handleChange = (event) => {
     let value = 0;
@@ -80,6 +81,7 @@ const Table = () => {
     setTotal3(total3);
     setTotal4(total4);
     setTotal5(total5);
+    setFinalCount(total + total2 + total3 + total4 + total5);
   };
 
   return (
@@ -318,12 +320,11 @@ const Table = () => {
           </tr>
           <tr>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td colSpan="4">
+              <button type="submit">Done!</button>
+            </td>
             <td>
-              <button type="submit">Submit</button>
+              <div>{finalCount}</div>
             </td>
           </tr>
         </tbody>
@@ -357,6 +358,11 @@ const StyledTable = styled.table`
   }
   input[type="checkbox"] {
     margin: 0;
+  }
+  button {
+    margin-top: 10px;
+    width: 3.5rem;
+    height: 3rem;
   }
 
   .blue {
