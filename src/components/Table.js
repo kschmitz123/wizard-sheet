@@ -320,11 +320,11 @@ const Table = () => {
           </tr>
           <tr>
             <td></td>
-            <td colSpan="4">
+            <td colSpan="3">
               <button type="submit">Done!</button>
             </td>
-            <td>
-              <div>{finalCount}</div>
+            <td colSpan="2">
+              <div className="finalCount">∑ {finalCount}</div>
             </td>
           </tr>
         </tbody>
@@ -352,6 +352,11 @@ const StyledTable = styled.table`
     margin: 0;
     background: white;
   }
+  .finalCount {
+    margin-top: 10px;
+    width: 6rem;
+  }
+
   p {
     background: white;
     color: black;
