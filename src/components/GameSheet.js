@@ -41,6 +41,7 @@ const GameSheet = () => {
   const [finalCount, setFinalCount] = useState("");
   const [XCount, setXCount] = useState(0);
   const [bonusCount, setBonusCount] = useState(false);
+  const [foolCount, setFoolCount] = useState(0);
 
   const handleChange = (event) => {
     let value = 0;
@@ -88,7 +89,7 @@ const GameSheet = () => {
     setTotal5(total5);
     setFinalCount(total + total2 + total3 + total4 + total5);
   };
-  console.log(bonusCount);
+  console.log(foolCount);
   return (
     <form action="submit" onSubmit={handleSubmit} onChange={handleChange}>
       <Table>
@@ -98,24 +99,39 @@ const GameSheet = () => {
               <img src={narr} alt="" />
             </td>
             <td>
-              <input type="checkbox" />
+              <input
+                type="checkbox"
+                onClick={() => setFoolCount(foolCount + 1)}
+              />
             </td>
             <td>
-              <input type="checkbox" />
+              <input
+                type="checkbox"
+                onClick={() => setFoolCount(foolCount + 1)}
+              />
             </td>
             <td>
-              <input type="checkbox" />
+              <input
+                type="checkbox"
+                onClick={() => setFoolCount(foolCount + 1)}
+              />
             </td>
             <td>
-              <input type="checkbox" />
+              <input
+                type="checkbox"
+                onClick={() => setFoolCount(foolCount + 1)}
+              />
             </td>
             <td>
-              <input type="checkbox" />
+              <input
+                type="checkbox"
+                onClick={() => setFoolCount(foolCount + 1)}
+              />
             </td>
           </tr>
           <tr>
             <td>
-              {XCount >= 9 ? (
+              {XCount + foolCount >= 9 ? (
                 <p style={{ color: "green" }} className="extrapoints">
                   ⑨
                 </p>
