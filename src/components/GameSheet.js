@@ -40,6 +40,7 @@ const GameSheet = () => {
   const [total5, setTotal5] = useState("");
   const [finalCount, setFinalCount] = useState("");
   const [XCount, setXCount] = useState(0);
+  const [bonusCount, setBonusCount] = useState(false);
 
   const handleChange = (event) => {
     let value = 0;
@@ -68,7 +69,6 @@ const GameSheet = () => {
     setSum5({ ...sum5, [event.target.name]: value });
   };
 
-  console.log(XCount);
   const handleSubmit = (event) => {
     event.preventDefault();
     const { blue1, green1, yellow1, red1 } = sum;
@@ -88,7 +88,7 @@ const GameSheet = () => {
     setTotal5(total5);
     setFinalCount(total + total2 + total3 + total4 + total5);
   };
-
+  console.log(bonusCount);
   return (
     <form action="submit" onSubmit={handleSubmit} onChange={handleChange}>
       <Table>
@@ -311,7 +311,14 @@ const GameSheet = () => {
           </tr>
           <tr>
             <td>
-              <p className="extrapoints">3</p>
+              <div className="extrapoints">
+                <input
+                  className="checkbox_extrapoints"
+                  type="checkbox"
+                  onClick={() => setBonusCount(!bonusCount)}
+                />
+                3
+              </div>
             </td>
             <td>
               <div>{total}</div>
@@ -335,7 +342,9 @@ const GameSheet = () => {
               <button type="submit">Fertig!</button>
             </td>
             <td colSpan="2">
-              <div className="finalCount">∑ {finalCount}</div>
+              <div className="finalCount">
+                ∑ {bonusCount === true ? finalCount + 3 : finalCount}
+              </div>
             </td>
           </tr>
         </tbody>

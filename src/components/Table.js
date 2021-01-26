@@ -57,6 +57,15 @@ const Table = styled.table`
     color: gray;
     width: 2.5rem;
     height: 2.5rem;
+    position: relative;
+  }
+  .checkbox_extrapoints {
+    position: absolute;
+    left: 0px;
+    opacity: 60%;
+    color: gray;
+    width: 2.5rem;
+    height: 2.5rem;
   }
 `;
 export default Table;
