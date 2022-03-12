@@ -1,17 +1,12 @@
 # Digitaler Begleiter zum Würfelspiel Wizard
 
-Digitaler Punkteerfasser. Es können Punkte und "X" eingetragen werden, die Gesamtpunktzahl wird automatisch berechnet. Sobald ein Spieler 9 "X" erreicht hat, wird dies farblich hervorgehoben. Der 3-Punkte-Bonus kann mit einem Klick hinzugefügt werden.
-
-**Achtung:** "X" werden momentan nur hochgezählt. Beim Löschen
-eines "X" kann es also zu einem Fehler bei der Berechnung kommen.
+Digitaler Punkteerfasser. Es können Punkte und "x" / "X" eingetragen werden, die Gesamtpunktzahl wird automatisch berechnet. Sobald ein Spieler 9 "X" erreicht hat, wird dies farblich hervorgehoben. Der 3-Punkte-Bonus kann mit einem Klick hinzugefügt werden.
 
 Die Rechte am Spiel liegen beim Hersteller, dieses Projekt dient nur der privaten Nutzung (und dem Sparen von Papier).
 
 # Digital game sheet for Wizrad (game of dice)
 
-Digital scoreboard. You can enter either numbers oder "X", the total score is calculated automatically. As soon as a player hits nine "X", the value will be highlighted in color. You can add the 3-points-bonus with one click.
-
-**Heads up:** "X" are only being counted up. When deleting "X" there might be an error in counting the current amount of "X".
+Digital scoreboard. You can enter either numbers oder "x" / "X", the total score is calculated automatically. As soon as a player hits nine "X", the value will be highlighted in color. You can add the 3-points-bonus with one click.
 
 The rights of this game lie with the manufacturer. This project is for private use only (and to save paper).
 
